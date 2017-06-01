@@ -1,4 +1,4 @@
-//
+/
 // DO THIS ON PAPER FIRST, THEN PASTE THE CODE INTO PROCESSING AND
 // CHECK YOUR ANSWERS.
 //
@@ -21,12 +21,12 @@ void draw() {
   background(255);
   move();
   bounce();
-  drawCar(_______, _______, 24, color(100));
+  drawCar(globalX, globalY, 24, color(100));
 }
 
 void move() {
   // Change the x location by speed
-  ________ = _______ + speed;
+  globalX = globalX + speed;
 }
 
 void bounce() {
@@ -35,7 +35,7 @@ void bounce() {
   }
 }
 
-void drawCar(int ___, int ___, int thesize, color c) {
+void drawCar(int x, int y, int thesize, color c) {
   int offset = thesize / 4;
   rectMode(CENTER);
   stroke(0);
